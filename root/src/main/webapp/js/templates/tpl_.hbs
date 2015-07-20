@@ -1,0 +1,44 @@
+
+{{#if {%= ConfigBool1 %} }}
+<div>
+	<!-- {%= ConfigBool1 %} stuff goes here -->
+</div>
+{{/if}}
+
+{{#if {%= ConfigBool2 %} }}
+<div>
+	<!-- {%= ConfigBool2 %} stuff goes here -->
+</div>
+{{/if}}
+
+{{#if {%= ConfigBool3 %} }}
+<div>
+	<!-- {%= ConfigBool3 %} stuff goes here -->
+</div>
+{{/if}}
+
+{{#if {%= ConfigBool4 %} }}
+<div>
+	<!-- {%= ConfigBool4 %} stuff goes here -->
+</div>
+{{/if}}
+
+<div class="field">
+	<label for="{%= ConfigString1 %}">{%= ConfigString1 %}:</label>
+	<input type="text" readonly value="{{{%= ConfigString1 %}}}" id="{%= ConfigString1 %}" name="{%= ConfigString1 %}">
+</div>
+
+<div class="field">
+	<label for="{%= ConfigString2 %}">{%= ConfigString2 %}:</label>
+	<input type="text" readonly value="{{{%= ConfigString2 %}}}" id="{%= ConfigString2 %}" name="{%= ConfigString2 %}">
+</div>
+
+<div class="field">
+	<label for="{%= ConfigString3 %}">{%= ConfigString3 %}:</label>
+	<input type="text" readonly value="{{{%= ConfigString3 %}}}" id="{%= ConfigString3 %}" name="{%= ConfigString3 %}">
+</div>
+
+<div class="field">
+	<label for="{%= ConfigString4 %}">{%= ConfigString4 %}:</label>
+	<input type="text" readonly value="{{{%= ConfigString4 %}}}" id="{%= ConfigString4 %}" name="{%= ConfigString4 %}">
+</div>
