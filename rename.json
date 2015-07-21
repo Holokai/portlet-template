@@ -6,7 +6,7 @@
 	"src/main/webapp/config.jsp":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/config.jsp",
 	"src/main/webapp/css/main.css":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/css/main.css",
 	"src/main/webapp/js/templates/tpl_.hbs":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/js/templates/tpl_{%= UnderscoredName %}.hbs",
-	"src/main/webapp/js/views/view__widget.js":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/js/views/view_{%= UnderscoredName %}_widget.js",
+	"src/main/webapp/js/views/view__widget.js":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/js/views/view_{%= UnderscoredName %}.js",
 	"src/main/webapp/js/widget.js":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/js/widget.js",
 	"src/main/webapp/view.jsp":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/view.jsp",
 	"src/main/webapp/WEB-INF/liferay-display.xml":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/WEB-INF/liferay-display.xml",

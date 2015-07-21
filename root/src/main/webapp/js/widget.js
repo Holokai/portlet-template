@@ -3,7 +3,7 @@ define(function(require) {
 	const _ = require('underscore');
 	const Widget = require('{%= BaseReference %}Base/widget');
 	const {%=ModelName %}Model = require('{%= BaseReference %}Models/{%= ModelName %}_model');
-	const View = require('./views/view_{%= UnderscoredName %}_widget');
+	const View = require('./views/view_{%= UnderscoredName %}');
 	const widgetName = '{%= PortletName %}Widget';
 
 	if(__DEV__) {	
