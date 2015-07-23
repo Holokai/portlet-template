@@ -2,7 +2,7 @@
 define(function(){
 	var Backbone = require('backbone');
 
-	return Backbone.Model.extend({
+	return Backbone.Collection.extend({
 		urlRoot : '{%= BaseUrl %}{%= ModelUrl %}/',
 		url:function(){
 			var filter = this.get('filter');
@@ -33,7 +33,7 @@ define(function(){
 			}
 		},
 		parse:function(response){
-			console.log('{%= ModelName %} model response: ',response);
+			console.log('{%= ModelName %} collection response: ',response);
 			return response.data;
 		}
 	});
