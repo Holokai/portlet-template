@@ -33,8 +33,13 @@ define(function(){
 			}
 		},
 		parse:function(response){
-			console.log('{%= ModelName %} model response: ',response);
-			return response.data;
+			console.log('{%= ModelName %} model response',response);
+			var retData = response;
+			if(! _.isEmpty(response.data && response.responseStatus)){
+				this.responseStatus = response.responseStatus;
+				retData = response.data;
+			}
+			return retData;
 		}
 	});
 });

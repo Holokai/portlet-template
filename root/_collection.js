@@ -5,11 +5,12 @@ define(function(){
 	return Backbone.Collection.extend({
 		urlRoot : '{%= BaseUrl %}{%= ModelUrl %}/',
 		url:function(){
-			var filter = this.get('filter');
+			var filter = this.filter;
 			var filterUrl = '';
 			//if a filter has been set, iterate through it and find the associated property/value pairs
 			if(! _.isEmpty(filter)){
-				filterUrl = '?Filter=['
+				//filterUrl = '?Filter=['
+				filterUrl = '?Filter='
 				for(var i=0;i<filter.length;i++){
 					filterUrl+='{property:'+filter[i].property+',value:'+filter[i].value+'},';
 				}
@@ -34,6 +35,7 @@ define(function(){
 		},
 		parse:function(response){
 			console.log('{%= ModelName %} collection response: ',response);
+			this.responseStatus = response.responseStatus;
 			return response.data;
 		}
 	});
