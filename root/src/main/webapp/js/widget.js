@@ -2,8 +2,9 @@ define(function(require) {
 
 	const _ = require('underscore');
 	const Widget = require('{%= BaseReference %}Base/widget');
-	const {%=ModelName %}Model = require('{%= BaseReference %}Models/{%= ModelName %}_model');
-	const View = require('./views/view_{%= UnderscoredName %}');
+	const LayoutView = require('./views/v_lov_{%= UnderscoredName %}');
+	const CompositeView = require('./views/v_cpv_{%= UnderscoredName %}');
+	const ItemView = require('./views/v_itv_{%= UnderscoredName %}');
 	const widgetName = '{%= PortletName %}Widget';
 
 	if(__DEV__) {	
@@ -20,7 +21,7 @@ define(function(require) {
 			{%= ConfigString4 %}:'{%= ConfigString4DefaultValue %}'
 		};
 		window.widgetConfig = widgetConfig;
-		console.log(widgetName+' config:', widgetConfig);
+		//console.log(widgetName+' config:', widgetConfig);
 	}
 
 	const parseConfigs = function(config) {
@@ -30,21 +31,24 @@ define(function(require) {
 	const {%= PortletName %}Widget = Widget.extend({
 		init: function(region, options) {
 			if(__DEV__) {
-				console.log('Started '+widgetName);
+				//console.log('Started '+widgetName);
 			}
 
 			let config = _.extend({}, config, options);
 			config = parseConfigs(config);
 
-			const my{%=ModelName %}Model = new {%=ModelName %}Model();
-
-			region.show(new View({
-				model: my{%=ModelName %}Model,
+			region.show(new LayoutView({
 				config: config
 			}));
+			// region.show(new CompositeView({
+			// 	config: config
+			// }));
+			// region.show(new ItemView({
+			// 	config: config
+			// }));
 
 			if(__DEV__) {
-				console.log('Loaded '+widgetName);
+				//console.log('Loaded '+widgetName);
 			}
 		}
 	});
