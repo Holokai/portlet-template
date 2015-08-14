@@ -2,7 +2,7 @@
 	"_model.js":"{%= ProductName %}-{%= PortletName %}-portlet/{%= ModelName %}_model.js",
 	"_collection.js":"{%= ProductName %}-{%= PortletName %}-portlet/{%= ModelName %}_collection.js",
 	"pom.xml":"{%= ProductName %}-{%= PortletName %}-portlet/pom.xml",
-	"src/main/java/com/companynamelowercase/javanamespaceproduct/portlet/action/ConfigurationActionImpl.java":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/java/com/{%= CompanyNameLowerCase %}/{%= JavaNameSpaceProduct %}/portlet/action/{%= PortletName %}ConfigurationActionImpl.java",
+	"src/main/java/com/companynamelowercase/javanamespaceproduct/portlet/action/ConfigurationActionImpl.java":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/java/com/{%= CompanyNameLowerCase %}/{%= JavaNameSpaceProduct %}/portlet/action/{%= PortletName %}ActionImpl.java",
 	"src/main/resources":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/resources",
 	"src/main/webapp/config.jsp":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/config.jsp",
 	"src/main/webapp/css/main.css":"{%= ProductName %}-{%= PortletName %}-portlet/src/main/webapp/css/main.css",

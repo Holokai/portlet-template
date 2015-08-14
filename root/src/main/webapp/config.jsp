@@ -13,16 +13,16 @@
 <liferay-portlet:actionURL portletConfiguration="true" var="configurationURL" />
 <%
 	//Config Bools
-	String {%= ConfigBool1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool1 %}"));
-	String {%= ConfigBool2 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool2 %}"));
-	String {%= ConfigBool3 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool3 %}"));
-	String {%= ConfigBool4 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool4 %}"));
+	String {%= ConfigBool1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool1 %}","{%= ConfigBool1DefaultValue %}"));
+	String {%= ConfigBool2 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool2 %}","{%= ConfigBool2DefaultValue %}"));
+	String {%= ConfigBool3 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool3 %}","{%= ConfigBool3DefaultValue %}"));
+	String {%= ConfigBool4 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigBool4 %}","{%= ConfigBool4DefaultValue %}"));
 	
 	//Config Strings
-	String {%= ConfigString1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString1 %}"));
-	String {%= ConfigString1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString2 %}"));
-	String {%= ConfigString1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString3 %}"));
-	String {%= ConfigString1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString4 %}"));
+	String {%= ConfigString1 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString1 %}","{%= ConfigString1DefaultValue %}"));
+	String {%= ConfigString2 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString2 %}","{%= ConfigString2DefaultValue %}"));
+	String {%= ConfigString3 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString3 %}","{%= ConfigString3DefaultValue %}"));
+	String {%= ConfigString4 %} = GetterUtil.getString(portletPreferences.getValue("{%= ConfigString4 %}","{%= ConfigString4DefaultValue %}"));
 
 	
 	
