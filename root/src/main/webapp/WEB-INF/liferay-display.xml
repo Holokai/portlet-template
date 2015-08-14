@@ -3,6 +3,6 @@
 
 <display>
 	<category name="{%= CategoryName %}">
-		<portlet id="{%= ProductName %}-{%= PortletName %}-portlets" />
+		<portlet id="{%= ProductName %}-{%= PortletName %}-portlet" />
 	</category>
 </display>
