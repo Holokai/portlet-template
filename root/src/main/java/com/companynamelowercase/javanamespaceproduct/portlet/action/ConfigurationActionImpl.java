@@ -4,7 +4,7 @@ import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletPreferences;
-public class {%= PortletName %}ConfigurationActionImpl extends DefaultConfigurationAction {
+public class {%= PortletName %}ActionImpl extends DefaultConfigurationAction {
 	@Override
 	public void processAction(PortletConfig portletConfig, ActionRequest actionRequest, ActionResponse actionResponse) throws Exception
 	{
