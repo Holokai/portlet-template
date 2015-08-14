@@ -44,10 +44,10 @@
 		{%= ConfigBool4 %}:<%= {%=ConfigBool4 %} %>,
 
 		//pass strings into portlet
-		{%= ConfigString1 %}:<%= {%=ConfigString1 %} %>,
-		{%= ConfigString2 %}:<%= {%=ConfigString2 %} %>,
-		{%= ConfigString3 %}:<%= {%=ConfigString3 %} %>,
-		{%= ConfigString4 %}:<%= {%=ConfigString4 %} %>,
+		{%= ConfigString1 %}:'<%= {%=ConfigString1 %} %>',
+		{%= ConfigString2 %}:'<%= {%=ConfigString2 %} %>',
+		{%= ConfigString3 %}:'<%= {%=ConfigString3 %} %>',
+		{%= ConfigString4 %}:'<%= {%=ConfigString4 %} %>'
 	});
 </script>
 

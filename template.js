@@ -11,7 +11,7 @@ exports.template = function(grunt, init, done){
 	init.process({type:''},[
 			init.prompt('PortletName',init.defaults.ProductName+'-{**Just This Part**}-portlet'),
 			init.prompt('ModelName'),
-			init.prompt('ModelUrl','/delegate/'+init.defaults.BaseReference+'-api/api/'+init.defaults.ProductLine+'/{**Just This Part**}'),
+			init.prompt('ModelUrl','/delegate/'+init.defaults.BaseReference+'-api/api/{**Just This Part**}'),
 			init.prompt('ConfigBool1','ConfigBool1'),
 			init.prompt('ConfigBool1DefaultValue','true'),
 			init.prompt('ConfigBool2','ConfigBool2'),
