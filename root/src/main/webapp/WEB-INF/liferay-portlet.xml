@@ -3,7 +3,7 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>{%= ProductName %}-{%= PortletName %}-portlets</portlet-name>
+		<portlet-name>{%= ProductName %}-{%= PortletName %}-portlet</portlet-name>
 		<icon>/icon.png</icon>
 		<configuration-action-class>com.{%= CompanyNameLowerCase %}.{%= JavaNameSpaceProduct %}.portlet.action.{%= PortletName %}ActionImpl</configuration-action-class>
 		<header-portlet-css>/css/main.css</header-portlet-css>

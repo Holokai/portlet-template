@@ -7,9 +7,9 @@
     <version>1.5.0.100-SNAPSHOT</version>
   </parent>
 	<groupId>com.{%= CompanyNameLowerCase %}.{%= ProductName %}.portlets</groupId>
-	<artifactId>{%= ProductName %}-{%= PortletName %}-portlets</artifactId>
+	<artifactId>{%= ProductName %}-{%= PortletName %}-portlet</artifactId>
 	<packaging>war</packaging>
-	<name>{%= ProductName %}-{%= PortletName %}-portlets</name>
+	<name>{%= ProductName %}-{%= PortletName %}-portlet</name>
 	<version>1.5.0.100-SNAPSHOT</version>
 	<build>
 		<plugins>
