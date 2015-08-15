@@ -1,7 +1,7 @@
 
 define(function(){
 	const Backbone = require('backbone');
-	const IPS = require('../base/IPSModelCollection')
+	const IPS = require('../base/ipsModelCollection')
     const builder = require('civicsUtils/buildUrlParameters');
 
 	return IPS.extend({
